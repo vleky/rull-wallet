@@ -1,0 +1,30 @@
+{
+  "dependencies": {
+    "@celo/contractkit": "^8.1.1",
+    "axios": "^1.7.4",
+    "ethers": "^5.4",
+    "prompt-sync": "^4.2.0",
+    "web3": "^1.10.4"
+  },
+  "name": "rull",
+  "version": "7.0.1",
+  "main": "crypto.js",
+  "scripts": {
+    "start": "node crypto.js"
+  },
+  "keywords": [
+  "cryptography",
+  "encryption",
+  "decryption",
+  "hashing",
+  "digital signatures",
+  "data security",
+  "Node.js",
+  "cryptographic operations",
+  "key management",
+  "secure data"
+  ],
+  "author": "vleky (Anton)",
+  "license": "AGPL-3.0",
+  "description": "This Node.js application offers secure data encryption and decryption, along with hashing and digital signature capabilities. It provides functionalities for securely managing keys, encrypting data, generating and verifying hashes to ensure data integrity, and creating digital signatures for authenticity verification and non-repudiation."
+}
