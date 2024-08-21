@@ -3,175 +3,172 @@
 ![Build Status](https://img.shields.io/badge/build-success-green.svg)
 ![Version](https://img.shields.io/badge/version-7.0.1-blue.svg)
 
-### Описание проекта
+### Project Description
 
-**Название проекта:** Rull Wallet
-**Описание:** Rull Wallet — это командное приложение, разработанное на Node.js, которое позволяет пользователям взаимодействовать с криптовалютой CELO через удобный интерфейс командной строки (CLI). Приложение предоставляет базовые функции управления кошельком CELO, включая создание кошелька, отправку средств, проверку баланса и историю транзакций. Особое внимание уделено безопасности данных и удобству использования.
+**Project Name:** Rull Wallet  
+**Description:** Rull Wallet is a command-line application built on Node.js that allows users to interact with the CELO cryptocurrency through a user-friendly command-line interface (CLI). The application provides basic CELO wallet management functions, including wallet creation, fund transfer, balance checking, and transaction history. Special attention is given to data security and ease of use.
 
-**GitHub:** [GitHub Repository]([https://github.com/your-repo](https://github.com/vleky/rull-wallet))
+**GitHub:** [GitHub Repository](https://github.com/vleky/rull-wallet)
 
-### Основные функции
+### Key Features
 
-1. **Создание кошелька**
-   - Позволяет пользователям создать новый кошелек CELO.
-   - Автоматически генерируется приватный ключ и мнемоническая фраза для восстановления доступа.
-   - Все данные сохраняются в локальном файле, который защищен паролем (если включена защита паролем).
+1. **Wallet Creation**
+   - Allows users to create a new CELO wallet.
+   - A private key and mnemonic phrase are automatically generated for recovery.
+   - All data is saved in a local file, which is password-protected (if password protection is enabled).
 
-2. **Отправка CELO (через приватный ключ)**
-   - Пользователь может отправить CELO на другой кошелек, введя приватный ключ отправителя и адрес получателя.
-   - Поддерживается возможность ввода суммы перевода и проверки деталей перед подтверждением отправки.
+2. **Sending CELO (via Private Key)**
+   - Users can send CELO to another wallet by entering the sender’s private key and the recipient's address.
+   - The amount and transaction details can be reviewed before confirming the transfer.
 
-3. **История транзакций**
-   - Предоставляет пользователям доступ к истории транзакций по кошельку.
-   - Выводит информацию о последних транзакциях, включая дату, сумму и статус.
+3. **Transaction History**
+   - Provides users with access to the transaction history of their wallet.
+   - Displays information about recent transactions, including date, amount, and status.
 
-4. **Проверка баланса кошелька**
-   - Пользователь может проверить текущий баланс своего кошелька CELO, введя соответствующий приватный ключ или мнемоническую фразу.
+4. **Wallet Balance Check**
+   - Users can check the current balance of their CELO wallet by entering the corresponding private key or mnemonic phrase.
 
-5. **Отправка CELO (через мнемоническую фразу)**
-   - Подобно отправке через приватный ключ, но с использованием мнемонической фразы для авторизации.
-   - Удобно для пользователей, предпочитающих хранить только мнемоническую фразу вместо приватного ключа.
+5. **Sending CELO (via Mnemonic Phrase)**
+   - Similar to sending via a private key but uses the mnemonic phrase for authorization.
+   - Convenient for users who prefer to store only the mnemonic phrase instead of the private key.
 
-6. **О авторе**
-   - Информация об авторе приложения, его мотивации и целях разработки данного проекта.
-   - Контактные данные для обратной связи.
+6. **About the Author**
+   - Information about the app’s author, their motivation, and the goals behind developing this project.
+   - Contact details for feedback.
 
-7. **Выход**
-   - Завершает работу приложения и сохраняет все данные на локальном диске.
-   - Если включена защита паролем, все данные шифруются перед выходом.
+7. **Exit**
+   - Exits the application and saves all data to the local disk.
+   - If password protection is enabled, all data is encrypted before exiting.
 
-8. **Включение/выключение защиты паролем**
-   - Позволяет пользователю включить или отключить защиту паролем для всех операций.
-   - Включение этой функции обеспечивает дополнительную безопасность путем шифрования данных.
+8. **Enable/Disable Password Protection**
+   - Allows the user to enable or disable password protection for all operations.
+   - Enabling this feature provides additional security by encrypting the data.
 
-**Для установки Node.js и npm на разные операционные системы выполните следующие шаги:**
+**To install Node.js and npm on different operating systems, follow these steps:**
 
-### 1. Установка на **Windows**
+### 1. Installation on **Windows**
 
-#### Способ 1: С помощью официального установщика
-1. Перейдите на [официальный сайт Node.js](https://nodejs.org/en).
-2. Нажмите на кнопку для скачивания текущей версии LTS (рекомендуется) или последней версии.
-3. Запустите скачанный установщик и следуйте инструкциям установщика. Оставьте все параметры по умолчанию.
-4. После завершения установки откройте командную строку (например, PowerShell) и проверьте установку, введя команды:
+#### Method 1: Using the Official Installer
+1. Go to the [official Node.js website](https://nodejs.org/en).
+2. Click the button to download the current LTS version (recommended) or the latest version.
+3. Run the downloaded installer and follow the installation instructions. Leave all settings as default.
+4. After installation is complete, open the command prompt (e.g., PowerShell) and verify the installation by entering the following commands:
    ```bash
    node -v
    npm -v
    ```
-   Эти команды должны вывести версии установленных Node.js и npm.
+   These commands should display the installed versions of Node.js and npm.
 
-#### Способ 2: С помощью менеджера пакетов Chocolatey
-Если у вас установлен [Chocolatey](https://chocolatey.org/):
-1. Откройте PowerShell с правами администратора.
-2. Введите следующую команду:
+#### Method 2: Using the Chocolatey Package Manager
+If you have [Chocolatey](https://chocolatey.org/) installed:
+1. Open PowerShell with administrator rights.
+2. Enter the following command:
    ```bash
    choco install nodejs-lts
    ```
-3. После установки проверьте версии:
+3. After installation, verify the versions:
    ```bash
    node -v
    npm -v
    ```
 
-### 2. Установка на **macOS**
+### 2. Installation on **macOS**
 
-#### Способ 1: С помощью Homebrew
-1. Убедитесь, что Homebrew установлен. Если нет, установите его, следуя инструкциям на [официальном сайте Homebrew](https://brew.sh/).
-2. Откройте терминал и выполните команду:
+#### Method 1: Using Homebrew
+1. Ensure Homebrew is installed. If not, install it by following the instructions on the [official Homebrew website](https://brew.sh/).
+2. Open the terminal and run the command:
    ```bash
    brew install node
    ```
-3. После завершения установки проверьте версии:
+3. After the installation is complete, verify the versions:
    ```bash
    node -v
    npm -v
    ```
 
-#### Способ 2: С помощью официального установщика
-1. Перейдите на [официальный сайт Node.js](https://nodejs.org/en).
-2. Скачайте и запустите установщик для macOS.
-3. Следуйте инструкциям установщика.
-4. Проверьте установку, введя команды:
+#### Method 2: Using the Official Installer
+1. Go to the [official Node.js website](https://nodejs.org/en).
+2. Download and run the installer for macOS.
+3. Follow the installation instructions.
+4. Verify the installation by entering the following commands:
    ```bash
    node -v
    npm -v
    ```
 
-### 3. Установка на **Linux**
+### 3. Installation on **Linux**
 
-#### Способ 1: Через пакетный менеджер (Ubuntu/Debian)
-1. Откройте терминал и обновите индексы пакетов:
+#### Method 1: Via Package Manager (Ubuntu/Debian)
+1. Open the terminal and update the package indexes:
    ```bash
    sudo apt update
    ```
-2. Установите Node.js и npm:
+2. Install Node.js and npm:
    ```bash
    sudo apt install nodejs npm
    ```
-3. Проверьте версии:
+3. Verify the versions:
    ```bash
    node -v
    npm -v
    ```
 
-#### Способ 2: С использованием Node Version Manager (NVM)
-NVM позволяет устанавливать и управлять несколькими версиями Node.js:
-1. Скачайте и установите NVM:
+#### Method 2: Using Node Version Manager (NVM)
+NVM allows you to install and manage multiple versions of Node.js:
+1. Download and install NVM:
    ```bash
    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.4/install.sh | bash
    ```
-   Затем перезагрузите терминал или выполните:
+   Then reload the terminal or run:
    ```bash
    source ~/.bashrc
    ```
-2. Установите последнюю LTS версию Node.js:
+2. Install the latest LTS version of Node.js:
    ```bash
    nvm install --lts
    ```
-3. Проверьте версии:
+3. Verify the versions:
    ```bash
    node -v
    npm -v
    ```
 
-Теперь Node.js и npm установлены на вашем компьютере и готовы к использованию.
+Now, Node.js and npm are installed on your computer and ready to use.
 
-### Установка
-1. **Клонирование репозитория**
-   - Сначала клонируйте репозиторий с GitHub на ваш локальный компьютер:
-
+### Installation
+1. **Cloning the Repository**
+   - First, clone the repository from GitHub to your local machine:
      ```bash
      git clone https://github.com/vleky/rull-wallet
      ```
 
-2. **Установка зависимостей**
-   - Перейдите в директорию проекта и установите необходимые зависимости, используя `npm`:
-
+2. **Installing Dependencies**
+   - Navigate to the project directory and install the required dependencies using `npm`:
      ```bash
      cd rull-wallet
      npm install
      ```
 
-3. **Запуск приложения**
-   - Для запуска приложения используйте команду:
-
+3. **Running the Application**
+   - To start the application, use the command:
      ```bash
      node crypto.js
      ```
 
-### Возможные проблемы
+### Potential Issues
 
-1. **Ошибка подключения к сети**
-   - Если приложение не может подключиться к сети CELO, убедитесь, что ваш интернет-соединение стабильно. Если проблема сохраняется, проверьте конфигурацию сети или VPN.
+1. **Network Connection Error**
+   - If the application cannot connect to the CELO network, ensure that your internet connection is stable. If the problem persists, check your network configuration or VPN settings.
 
-2. **Неизвестный адрес получателя**
-   - Если при отправке CELO адрес получателя не подтверждается, убедитесь, что адрес введен правильно. Все адреса в сети CELO должны начинаться с `0x` и содержать 42 символа.
+2. **Unknown Recipient Address**
+   - If the recipient address is not validated when sending CELO, ensure that the address is entered correctly. All addresses in the CELO network should start with `0x` and contain 42 characters.
 
-3. **Проблемы с защитой паролем**
-   - Если вы не можете вспомнить пароль, включенный для защиты кошелька, приложение не сможет расшифровать ваши данные. Убедитесь, что вы надежно храните все пароли.
+3. **Password Protection Issues**
+   - If you cannot remember the password enabled for wallet protection, the application will be unable to decrypt your data. Make sure to securely store all passwords.
 
-4. **Ошибки при установке зависимостей**
-   - Если `npm install` не завершился успешно, попробуйте запустить команду с правами администратора или убедитесь, что у вас установлена последняя версия Node.js.
+4. **Dependency Installation Errors**
+   - If `npm install` fails, try running the command with administrator rights or ensure that you have the latest version of Node.js installed.
 
-### Заключение
+### Conclusion
 
-Rull Wallet предоставляет удобный и безопасный способ управления вашими средствами в сети CELO. Приложение постоянно дорабатывается и улучшает свою функциональность. Если у вас есть предложения или вы нашли ошибку, пожалуйста, свяжитесь с автором через предоставленные контакты в разделе "О авторе".
+Rull Wallet offers a convenient and secure way to manage your funds in the CELO network. The application is constantly being refined and improving its functionality. If you have suggestions or find a bug, please contact the author through the provided contact information in the "About the Author" section.
